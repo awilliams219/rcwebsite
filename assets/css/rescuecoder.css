@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans");
+h1 {
+  font-size: 750%;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 900;
+  letter-spacing: -7px;
+  margin: 0; }
+
+h2 {
+  font-size: 45px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  margin: 0; }
+
+.section.grand-title {
+  background-color: #de1e1b;
+  color: #eee; }
+  .section.grand-title svg {
+    width: 30%;
+    height: 30%; }
+  .section.grand-title .section-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; }
+.section.about-me {
+  color: #222;
+  background-image: url(../images/motorcycle.jpg);
+  background-size: 100%; }
+.section.footer {
+  background-color: #222;
+  color: #eee;
+  font-family: "Work Sans", sans-serif; }
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background-color: #eee; }
+
+.fp-tooltip.right {
+  margin-left: -500%;
+  text-align: right;
+  width: 65px; }
+
+/*# sourceMappingURL=rescuecoder.css.map */
