@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:900|Roboto&effect=outline');
+
 $rescuecoderRed : #de1e1b;
 $rescuecoderWhite : #eee;
 $rescuecoderBlue : #1f1ce5;
 $rescuecoderGreen : #1ce51f;
 $rescuecoderBlack : #222;
 $workSans : "Work Sans", sans-serif;
+$roboto : "Roboto", sans-serif;
 
 h1 {
   font-size: 750%;
@@ -15,14 +17,29 @@ h1 {
 }
 
 h2 {
-  font-size: 45px;
+  font-size: 3vw;
   font-family: $workSans;
   font-weight: 600;
   margin: 0;
+  &.bigger {
+    font-size: 5vw;
+  }
 }
 
 
 .section {
+
+  .section-content {
+    p {
+      font-family: $roboto;
+      color: #fff;
+      font-size:110%;
+      &.no-margin {
+        margin: 0;
+      }
+    }
+  }
+
   &.grand-title {
     background-color: $rescuecoderRed;
     color: $rescuecoderWhite;
@@ -39,12 +56,21 @@ h2 {
       align-items: center;
       justify-content: space-around;
     }
+
   }
 
   &.about-me {
     color: $rescuecoderBlack;
-    background-image: url(../images/motorcycle.jpg);
+    background-image: url(../images/shooting.jpg);
     background-size: 100%;
+    .section-content {
+      max-width: 40%;
+      margin-left:8%;
+      h2 {
+        text-shadow:0 1px 1px #000, 0 -1px 1px #000, 1px 0 1px #000, -1px 0 1px #000;
+        color: #fff;
+      }
+    }
   }
 
   &.footer {
